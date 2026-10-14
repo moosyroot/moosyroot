@@ -2,19 +2,13 @@
   <img src="https://moosyroot-hero.moosyroot-hero.workers.dev/hero.svg" alt="Mr. Moosy — MoosyRoot" width="100%" />
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3200&pause=1000&color=45BB92&center=true&vCenter=true&width=620&lines=Her+sekt%C3%B6re+%C3%B6zel+yaz%C4%B1l%C4%B1m+%C3%A7%C3%B6z%C3%BCmleri;Mobil%2C+masa%C3%BCst%C3%BC+ve+web;Yapay+zek%C3%A2+destekli+i%C5%9F+ak%C4%B1%C5%9Flar%C4%B1;Beraber+b%C3%BCy%C3%BCyelim+%F0%9F%8C%B1" alt="Her sektöre özel yazılım çözümleri. Beraber büyüyelim." />
-</p>
-
----
-
-## 🚀 Projelerimiz
+### 🚀 Projelerimiz
 
 <p align="center">
   <a href="https://xn--novailetme-i9b.com.tr"><img src="assets/nova-card.svg" alt="Nova — İş Akışınıza Yön Verin. Küçük ve orta ölçekli işletmeler için CRM. Erken erişimde: novaişletme.com.tr" width="100%" /></a>
 </p>
 
-## 🤝 Açık Kaynak Katkıları
+### 🤝 Açık Kaynak Katkıları
 
 Nova'yı geliştirirken kullandığımız kütüphanelerde karşılaştığımız sorunları kaynağında düzeltmeye çalışıyoruz.
 
@@ -24,8 +18,6 @@ Nova'yı geliştirirken kullandığımız kütüphanelerde karşılaştığımı
 | [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart) | [Web'de veritabanı okumalarını dosya boyutundan bağımsız hâle getirme](https://github.com/simolus3/sqlite3.dart/pull/419) | 🟡 İnceleniyor |
 | [akvelon/dart-highlighting](https://github.com/akvelon/dart-highlighting) | [Yalnızca kayıtlı dilleri derleyen `HighlightCore`](https://github.com/akvelon/dart-highlighting/pull/78) | 🟡 İnceleniyor |
 <!-- KATKILAR:BITIR -->
-
----
 
 <h3 align="center">Beraber büyüyelim. 🌱</h3>
 
