@@ -1,0 +1,4 @@
+{
+  "https://github.com/simolus3/sqlite3.dart/pull/419": "Web'de veritabanı okumalarını dosya boyutundan bağımsız hâle getirme",
+  "https://github.com/akvelon/dart-highlighting/pull/78": "Yalnızca kayıtlı dilleri derleyen `HighlightCore`"
+}
