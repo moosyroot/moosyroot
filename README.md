@@ -23,7 +23,7 @@ Nova'yı geliştirirken kullandığımız kütüphanelerde karşılaştığımı
 
 <p align="center">
   Aklınızdaki projeyi anlatın, sektörünüze uygun çözümü birlikte tasarlayalım.<br />
-  İlk görüşme de, ilk çay da bizden. ☕
+  İlk görüşme de, ilk kahve de bizden. ☕
 </p>
 
 <p align="center">
