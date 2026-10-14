@@ -1,4 +1,4 @@
-name: Katkı tablosunu güncelle
+name: Update contributions table
 
 on:
   schedule:
@@ -24,19 +24,19 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Tabloyu üret
+      - name: Build the table
         run: python scripts/update_contributions.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: ${{ github.repository_owner }}
 
-      - name: Değiştiyse commit at
+      - name: Commit if changed
         run: |
           if git diff --quiet README.md; then
-            echo "Değişiklik yok."
+            echo "No changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "chore: katkı tablosunu güncelle"
+          git commit -am "chore: update contributions table"
           git push

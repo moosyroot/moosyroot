@@ -2,32 +2,32 @@
   <img src="https://moosyroot-hero.moosyroot-hero.workers.dev/hero.svg" alt="Mr. Moosy — MoosyRoot" width="100%" />
 </p>
 
-### 🚀 Projelerimiz
+### 🚀 Our Projects
 
 <p align="center">
-  <a href="https://xn--novailetme-i9b.com.tr"><img src="assets/nova-card.svg" alt="Nova — İş Akışınıza Yön Verin. Küçük ve orta ölçekli işletmeler için CRM. Erken erişimde: novaişletme.com.tr" width="100%" /></a>
+  <a href="https://xn--novailetme-i9b.com.tr"><img src="assets/nova-card.svg" alt="Nova — Steer your workflow. A CRM for small and medium-sized businesses. Early access: novaişletme.com.tr" width="100%" /></a>
 </p>
 
-### 🤝 Açık Kaynak Katkıları
+### 🤝 Open Source Contributions
 
-Nova'yı geliştirirken kullandığımız kütüphanelerde karşılaştığımız sorunları kaynağında düzeltmeye çalışıyoruz.
+When we hit an issue in a library Nova depends on, we try to fix it at the source.
 
-<!-- KATKILAR:BASLA -->
-| Proje | Katkı | Durum |
+<!-- CONTRIBUTIONS:START -->
+| Project | Contribution | Status |
 | --- | --- | --- |
-| [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart) | [Web'de veritabanı okumalarını dosya boyutundan bağımsız hâle getirme](https://github.com/simolus3/sqlite3.dart/pull/419) | 🟡 İnceleniyor |
-| [akvelon/dart-highlighting](https://github.com/akvelon/dart-highlighting) | [Yalnızca kayıtlı dilleri derleyen `HighlightCore`](https://github.com/akvelon/dart-highlighting/pull/78) | 🟡 İnceleniyor |
-<!-- KATKILAR:BITIR -->
+| [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart) | [Make web database reads independent of file size](https://github.com/simolus3/sqlite3.dart/pull/419) | 🟡 In review |
+| [akvelon/dart-highlighting](https://github.com/akvelon/dart-highlighting) | [`HighlightCore` that compiles only registered languages](https://github.com/akvelon/dart-highlighting/pull/78) | 🟡 In review |
+<!-- CONTRIBUTIONS:END -->
 
-<h3 align="center">Beraber büyüyelim. 🌱</h3>
+<h3 align="center">Let's grow together. 🌱</h3>
 
 <p align="center">
-  Aklınızdaki projeyi anlatın, sektörünüze uygun çözümü birlikte tasarlayalım.<br />
-  İlk görüşme de, ilk kahve de bizden. ☕
+  Tell us about your project, and let's design the right solution for your industry together.<br />
+  The first meeting and the first coffee are on us. ☕
 </p>
 
 <p align="center">
-  <a href="mailto:moosyroot@gmail.com"><img src="https://img.shields.io/badge/E--posta_G%C3%B6nder-0F6E56?style=for-the-badge&logo=gmail&logoColor=white" alt="E-posta gönder" /></a>
+  <a href="mailto:moosyroot@gmail.com"><img src="https://img.shields.io/badge/Send_an_Email-0F6E56?style=for-the-badge&logo=gmail&logoColor=white" alt="Send an email" /></a>
   <a href="https://www.instagram.com/moosyroot/"><img src="https://img.shields.io/badge/Instagram-0F6E56?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
-  <a href="https://xn--novailetme-i9b.com.tr"><img src="https://img.shields.io/badge/Nova%27y%C4%B1_Dene-0F6E56?style=for-the-badge&logoColor=white" alt="Nova'yı dene" /></a>
+  <a href="https://xn--novailetme-i9b.com.tr"><img src="https://img.shields.io/badge/Try_Nova-0F6E56?style=for-the-badge&logoColor=white" alt="Try Nova" /></a>
 </p>

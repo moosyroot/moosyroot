@@ -1,7 +1,7 @@
 import { DurableObject } from "cloudflare:workers";
 import template from "./hero-template.js";
 
-// Tek bir sayaç örneği; istekler sırayla işlendiği için eşzamanlı ziyaretler kaybolmaz.
+// A single counter instance; requests are processed one at a time, so concurrent visits are never lost.
 export class VisitCounter extends DurableObject {
   async increment() {
     const count = ((await this.ctx.storage.get("count")) ?? 0) + 1;
@@ -11,7 +11,7 @@ export class VisitCounter extends DurableObject {
 }
 
 function counterBadge(count) {
-  const label = `${count.toLocaleString("tr-TR")} ziyaretçi`;
+  const label = `${count.toLocaleString("en-US")} views`;
   const width = 44 + label.length * 8.4;
   const x = 1000 - 24 - width;
   return `<g class="in d3">
@@ -23,7 +23,7 @@ function counterBadge(count) {
 
 const HEADERS = {
   "content-type": "image/svg+xml; charset=utf-8",
-  // GitHub'ın görsel proxy'si (camo) önbelleğe almasın, her ziyarette yeniden istesin.
+  // Keep GitHub's image proxy (camo) from caching, so it fetches again on every visit.
   "cache-control": "no-cache, no-store, must-revalidate, max-age=0",
 };
 
@@ -42,8 +42,8 @@ export default {
       const counter = env.COUNTER.get(env.COUNTER.idFromName("moosyroot-profile"));
       badge = counterBadge(await counter.increment());
     } catch (error) {
-      // Sayaç çalışmasa da Mr. Moosy görünmeye devam etsin.
-      console.error("sayaç artırılamadı", error);
+      // Even if the counter fails, Mr. Moosy should still show up.
+      console.error("failed to increment counter", error);
     }
     return new Response(template.replace("<!--COUNTER-->", badge), { headers: HEADERS });
   },

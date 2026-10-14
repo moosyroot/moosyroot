@@ -1,8 +1,8 @@
-"""README'deki açık kaynak katkıları tablosunu GitHub aramasından yeniden üretir.
+"""Rebuilds the open source contributions table in the README from GitHub search.
 
-Kullanıcının kendi repoları dışındaki herkese açık PR'larını bulur; reddedilip
-kapanmış olanları göstermez. Türkçe açıklamalar contributions.json'dan gelir,
-açıklaması olmayan PR kendi başlığıyla yazılır.
+Finds the user's public PRs outside their own repositories and skips ones that
+were closed without being merged. Custom descriptions come from
+contributions.json; a PR without one is listed with its own title.
 """
 
 import json
@@ -16,9 +16,9 @@ USER = os.environ.get("GITHUB_USER", "moosyroot")
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
 DESCRIPTIONS = ROOT / "contributions.json"
-START, END = "<!-- KATKILAR:BASLA -->", "<!-- KATKILAR:BITIR -->"
+START, END = "<!-- CONTRIBUTIONS:START -->", "<!-- CONTRIBUTIONS:END -->"
 
-STATUS = {"merged": "✅ Kabul edildi", "open": "🟡 İnceleniyor"}
+STATUS = {"merged": "✅ Merged", "open": "🟡 In review"}
 
 
 def search_prs():
@@ -48,8 +48,8 @@ def build_table(items, descriptions):
             f"| [{repo}](https://github.com/{repo}) | [{text}]({item['html_url']}) | {STATUS[status]} |"
         )
     if not rows:
-        return "_Henüz açık kaynak katkısı yok._"
-    return "\n".join(["| Proje | Katkı | Durum |", "| --- | --- | --- |", *rows])
+        return "_No open source contributions yet._"
+    return "\n".join(["| Project | Contribution | Status |", "| --- | --- | --- |", *rows])
 
 
 def main():
@@ -58,7 +58,7 @@ def main():
     readme = README.read_text()
     pattern = re.compile(re.escape(START) + r".*?" + re.escape(END), re.S)
     if not pattern.search(readme):
-        raise SystemExit(f"README'de {START} ... {END} işaretleri bulunamadı")
+        raise SystemExit(f"Could not find the {START} ... {END} markers in README")
     README.write_text(pattern.sub(lambda _: f"{START}\n{table}\n{END}", readme))
 
 
