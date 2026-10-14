@@ -15,7 +15,7 @@ When we hit an issue in a library Nova depends on, we try to fix it at the sourc
 <!-- CONTRIBUTIONS:START -->
 | Project | Contribution | Status |
 | --- | --- | --- |
-| [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart) | [Make web database reads independent of file size](https://github.com/simolus3/sqlite3.dart/pull/419) | 🟡 In review |
+| [doublej/claude-verbs](https://github.com/doublej/claude-verbs) | [add: tr-muhabbet verb set (first Turkish set 🇹🇷)](https://github.com/doublej/claude-verbs/pull/7) | 🟡 In review |
 | [akvelon/dart-highlighting](https://github.com/akvelon/dart-highlighting) | [`HighlightCore` that compiles only registered languages](https://github.com/akvelon/dart-highlighting/pull/78) | 🟡 In review |
 <!-- CONTRIBUTIONS:END -->
 
